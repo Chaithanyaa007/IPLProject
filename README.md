@@ -1,18 +1,18 @@
 # 🏏 IPL Match Winner Prediction
 
-## 📌 Overview
+##  Overview
 This project predicts the winner of Indian Premier League (IPL) matches using Machine Learning.
 
 The model is trained on historical IPL match data and predicts match outcomes based on team and toss information.
 
 ---
 
-## 🎯 Problem Statement
+##  Problem Statement
 To build a classification model that can predict the winning team of an IPL match using historical match features.
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 - Python  
 - Pandas  
 - NumPy  
@@ -22,12 +22,12 @@ To build a classification model that can predict the winning team of an IPL matc
 
 ---
 
-## 📦 Dataset
+##  Dataset
 The dataset used is `matches.csv`, containing historical IPL match results and key match details.
 
 ---
 
-## 🔍 Features Used
+##  Features Used
 - Team 1  
 - Team 2  
 - Toss Winner  
@@ -35,28 +35,32 @@ The dataset used is `matches.csv`, containing historical IPL match results and k
 
 ---
 
-## 🤖 Model Used
+##  Model Used
 Random Forest Classifier
 
 ---
 
-## 📊 Model Accuracy
+##  Model Accuracy
 48.62%
 
 ---
 
-## 💻 How to Run
+##  How to Run
 1. Clone the repository:
    ```bash
    git clone https://github.com/Chaithanyaa007/IPLProject.git
+   ```
 
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
+   ```
 
 3. Open the Jupyter Notebook and run all cells.
 
-🧠 Core Model Code:
+---
+
+ Core Model Code
 ```Python
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -88,14 +92,14 @@ model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 print("Accuracy:", round(accuracy_score(y_test, y_pred)*100,2),"%")
 ```
-📈Future Improvements:
+---
+
+Future Improvements
+
 - Add venue and match statistics
 - Improve accuracy with advanced models (XGBoost / LightGBM)
 - Deploy the model using Streamlit for interactive predictions
+---
 
-👩‍💻 Author
-Chaithanya S
+**Author:** Chaithanya S
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Chaithanyaa007/IPLProject.git
